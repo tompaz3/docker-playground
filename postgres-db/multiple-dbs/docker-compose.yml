@@ -1,0 +1,20 @@
+version: '3.5'
+services:
+  postgres_multiple_db:
+    image: postgres-multiple-db:latest
+    container_name: postgres-multiple-db
+    ports:
+      - "5432:5432"
+    environment:
+      - POSTGRES_USER=postgres
+      - POSTGRES_PASSWORD=postgres
+      - POSTGRES_DB=postgres
+      - POSTGRES_USER_1=app1
+      - POSTGRES_PASSWORD_1=app1
+      - POSTGRES_DB_1=app1
+      - POSTGRES_USER_2=app2
+      - POSTGRES_PASSWORD_2=app2
+      - POSTGRES_DB_2=app2
+      - POSTGRES_USER_3=app3
+      - POSTGRES_PASSWORD_3=app3
+      - POSTGRES_DB_3=app3
